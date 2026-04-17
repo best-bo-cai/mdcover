@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic>=2
+markdown
+pymdown-extensions
+pygments
+jinja2
+weasyprint
+pypandoc
+pytest
+httpx<0.28

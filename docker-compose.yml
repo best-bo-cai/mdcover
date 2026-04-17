@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: ./backend
+    container_name: mdcover-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./frontend
+    container_name: mdcover-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
